@@ -14,6 +14,10 @@
   margin-top: 2.5rem;
   position: relative;
   min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .animal-list__item > h3 {
@@ -36,10 +40,6 @@
   border: none;
   border-radius: 999px;
   aspect-ratio: 1;
-  display: flex;
-  margin: auto auto;
-  margin-top: 1rem;
-  place-items: center;
   background-color: var(--foam);
 }
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
-import Form from "./components/Form/index.js";
-import List from "./components/List/index.js";
+import Form from "./components/Form/index";
+import List from "./components/List/index";
 import { uid } from "uid";
 
 const initialAnimals = [

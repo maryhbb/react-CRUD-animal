@@ -1,6 +1,6 @@
 import "./List.css";
 
-export default function List({ animals }) {
+export default function List({ animals, onDeleteTag }) {
   return (
     <>
       <h2>Your animals:</h2>
@@ -11,6 +11,14 @@ export default function List({ animals }) {
             <span aria-label="emoji" className="animal-list__emoji">
               {animal.emoji}
             </span>
+            <button
+              className="animal-list__item-button"
+              type="button"
+              aria-label="delete list item"
+              onClick={() => onDeleteTag?.(animal)}
+            >
+              ✕
+            </button>
           </li>
         ))}
       </ul>

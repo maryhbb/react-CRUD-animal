@@ -31,3 +31,20 @@
   top: -2.5rem;
   filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 1));
 }
+
+.animal-list__item-button {
+  border: none;
+  border-radius: 999px;
+  aspect-ratio: 1;
+  display: flex;
+  margin: auto auto;
+  margin-top: 1rem;
+  place-items: center;
+  background-color: var(--foam);
+}
+
+.animal-list__item-button:hover {
+  background-color: var(--nemo);
+  color: var(--foam);
+  scale: 1.05;
+}

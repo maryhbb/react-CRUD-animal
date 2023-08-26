@@ -31,10 +31,14 @@ export default function App() {
     setAnimals([...animals, { id: uid(), ...newAnimal }]);
   }
 
+  const handelDeleteAnimal = (animalToDelete) => {
+    setAnimals(animals.filter((animal) => animal !== animalToDelete));
+  };
+
   return (
     <main className="app">
       <Form onAddAnimal={handleAddAnimal} />
-      <List animals={animals} />
+      <List animals={animals} onDeleteTag={handelDeleteAnimal} />
     </main>
   );
 }

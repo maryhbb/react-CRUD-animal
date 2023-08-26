@@ -5,7 +5,7 @@
 
 
 
-In this project, I'm enhancing the functionality of my **React application** by implementing CRUD (Create, Read, Update, Delete) operations for managing animals. 🦁🐘🐶🐱
+In this project, I'm enhancing the functionality of my **React application** by implementing CRUD (Create, Read, Update, Delete) operations for managing animals. 
 
 --------------------------------------------
 

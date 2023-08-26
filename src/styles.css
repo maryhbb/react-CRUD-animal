@@ -17,6 +17,11 @@ body {
   display: grid;
   min-height: 100vh;
   place-items: center;
+  background-image: url('https://images.photowall.com/products/64268/tropical-jungle-1.jpg?h=699&q=85');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
 }
 
 ul {

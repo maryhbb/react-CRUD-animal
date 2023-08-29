@@ -17,7 +17,7 @@ export default function List({ animals, onDeleteTag }) {
                 className="animal-list__item-button"
                 type="button"
                 aria-label="delete list item"
-                onClick={() => onDeleteTag?.(animal)}
+                onClick={() => onDeleteTag(animal)}
               >
                 ✕
               </button>

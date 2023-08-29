@@ -1,4 +1,4 @@
-const initialAnimals = [
+export const initialAnimals = [
   {
     id: "mTBErig",
     name: "Octopus",
@@ -18,13 +18,8 @@ const initialAnimals = [
 
 const key = "animals";
 
-export function initializeAnimals() {
-  localStorage.getItem(key) === null &&
-    setAnimalsToLocalStorage(initialAnimals);
-}
-
 export function getAnimalsFromLocalStorage() {
-  return JSON.parse(localStorage.getItem(key)) ?? [];
+  return JSON.parse(localStorage.getItem(key));
 }
 
 export function setAnimalsToLocalStorage(animals) {

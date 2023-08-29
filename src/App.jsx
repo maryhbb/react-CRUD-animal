@@ -6,13 +6,13 @@ import { uid } from "uid";
 import {
   getAnimalsFromLocalStorage,
   setAnimalsToLocalStorage,
-  initializeAnimals,
+  initialAnimals,
 } from "./animals";
 
-initializeAnimals(); // seed with initialAnimals on first run
-
 export default function App() {
-  const [animals, setAnimals] = useState(getAnimalsFromLocalStorage());
+  const [animals, setAnimals] = useState(
+    getAnimalsFromLocalStorage() ?? initialAnimals,
+  );
 
   function handleAddAnimal(newAnimal) {
     setAnimals(prev =>
